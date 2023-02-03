@@ -1,30 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-   }
-  
-  .element {
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-   }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%);
-   }
-  
-   .elements {
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
-     
-   }
-  
-  .white {fill:#FFFFFF}
-  .gray {fill:#E0E0E0}
-  .yellow {fill:#FFEB3B}
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #17202e;
+  color: #fff;
+}
+
+.main-header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.search {
+  justify-content: center;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+.search-button {
+  flex-direction: row;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button {
+  height: 70%;
+  background-color: #2e4053;
+  padding: 3.7px;
+  padding-left: 10px;
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #ddd;
+}
+
+@media (min-width: 601px) {
+  .main-search-input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-search-input {
+    width: 160px;
+  }
+}
+
+.main-search-input {
+  height: 70%;
+
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-grow: 0;
+  color: #fff;
+  caret-color: #fff;
+  padding: 10px;
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: #2e4053;
+}
+
+.main-search-input::-moz-placeholder {
+  color: black;
+}
+
+.main-search-input:focus {
+  outline: none;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greet {
+  display: flex;
+}
+
+.links {
+  display: flex;
+}
+
+#button {
+  cursor: pointer;
+  background-color: #17202e;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.filterer {
+  filter: invert(62%) sepia(2%) saturate(2707%) hue-rotate(169deg)
+    brightness(90%) contrast(63%);
+}
+
+.social-m {
+  width: 35px;
+}
+
+.buttons {
+  gap: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
